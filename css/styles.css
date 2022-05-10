@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+body{
+    box-sizing: border-box;
+    background-color: #E5E5E5;
+    font-family: "Inter" sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    height: 100vh;
+}
+.header{
+    height: 2em;
+    position: relative;
+    margin: 0 auto;
+    background-color: #E5E5E5;
+}
+.logo{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    line-height: 1em;
+}
+.main{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    width: 90%;
+    height: 100%;
+}
+.input-text{
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    box-shadow: none;
+    background: none;
+}
+.mensaje-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 676px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    background-color: #FFFFFF;
+    box-shadow: 1px 4px 10px rgb(0 0 0 / 10%);
+    border-radius: 32px;
+}
+.text-area{
+    color: #0A3871;
+    font-size: 16px;
+    margin-top: 50px;
+    border: none;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    box-shadow: none;
+    background: none;
+}
+.banner{
+    margin: auto;
+}
+.banner p{
+    color: dimgray;
+    font-family: Inter;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.2;
+}
+#munecoImg{
+   width: 336px;
+   height: 304px;
+}
+
+.error{
+    color:#333333 ;
+    font-family: Inter;
+    text-align: center;
+    margin: 0 auto;
+    width: 336px;
+    color: red;
+    animation: fadeInAnimation ease 3s;
+
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.banner-text p{
+    color: dimgray;
+    font-family: Inter;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.2;
+}
+.input-area{
+    height: 600px
+}
+.btn-section{
+    position:relative;
+}
+.btn-container{
+   position:absolute;
+   top: 600px;
+}
+.p-small{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.btn-flex{
+    display: flex;
+
+}
+.btn{
+    border-radius: 24px;
+    cursor: pointer;
+    width: 328px;
+    height: 67px;
+    margin: 0;
+    padding: 24px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 19px;
+    text-align: center;
+    transition: 1s all;
+}
+.btn:hover{
+    transform: scale(.975);
+    color:#FFFFFF;
+    background-color: #0A3871;
+    cursor: pointer;
+}
+.btn-code{
+    margin-right: 20px;
+}
+
+.btn-light{
+    color: #0A3871;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+}
+.btn-copy{
+    margin:0 auto;
+}
+.btn-font{
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 19px;
+    text-align: center;
+}
+.footer{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer p{
+    color: dimgray;
+    font-family: Inter;
+    font-size: 13px;
+    line-height: 1.2;
+
+}
+
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+      transform: translate3d(0, 40px, 0);
+    }
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+}
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+  }
+
+  .animatedFadeInUp {
+    opacity: 0;
+  }
+
+  .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+  }
+
+@keyframes fadeInAnimation {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+@keyframes fadeoutAnimation {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}

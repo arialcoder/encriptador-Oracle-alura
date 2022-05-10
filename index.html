@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenger01-Alura-One-Oracle</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <img src="./img/Logo.png" class="logo Alura" alt="Logo Alura">
+
+    </header>
+    <main class="main animated fadeInUp animatedFadeInUp">
+        <section class="section input-area btn-section">
+            <textarea class="input-text" name="" id="" cols="60" rows="10" placeholder="Ingrese su texto..."
+                maxlength="300" autofocus required pattern:></textarea>
+
+            <div class="btn-container">
+                <p class="p-small"><img class="excla" src="./img/excla.png" alt="">
+                    Solo letras minúsculas y sin acentos</p>
+                <div class="btn-flex">
+                    <button class="btn btn-light btn-font btn-code" onclick="btnEncriptar()">Encriptar!</button>
+                    <button class="btn btn-light btn-font btn-decode" onclick="btnDesencriptar()">Desencriptar!</button>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="mensaje-container">
+                <textarea class="text-area" id="textarea" cols="30" rows="80" disabled></textarea>
+                <div class="banner" id="banner">
+                    <img id="munecoImg" src="./img/Muneco.png" alt="imagen">
+                    <div class="banner-text">
+                        <h6 id="error" class="error">Ningún mensaje fue encontrado</h6>
+                        <p>Inserte el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </div>
+                <button class="btn btn-light btn-font btn-copy" id="btn-copy" onclick="copiarTexto()">Copiar
+                    Texto</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">Challenger 1 Oracle ONE | Alura Latam &copy</p>
+        <p> make with &#128153 Miriam M.</p>
+    </footer>
+</body>
+<script src="./js/script.js"></script>
+
+</html>
