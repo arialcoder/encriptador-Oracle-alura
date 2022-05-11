@@ -127,6 +127,5 @@ function copiarTexto(){
 
     navigator.clipboard.writeText(mensaje.value);
     mensaje.select();
-
-    console.log("Mensaje copiado: " + mensaje.value);
+    alert("Mensaje copiado: " + mensaje.value);
 }
