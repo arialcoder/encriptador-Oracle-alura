@@ -5,7 +5,7 @@ body{
     font-family: "Inter" sans-serif;
     font-weight: 400;
     font-size: 32px;
-    height: 100vh;
+    height: max-content;
 }
 .header{
     height: 2em;
@@ -26,7 +26,8 @@ body{
     justify-content: space-around;
     align-content: center;
     width: 90%;
-    height: 100%;
+    /* height: 100%; */
+
 }
 .input-text{
     color: #0A3871;
@@ -159,7 +160,10 @@ body{
     text-align: center;
 }
 .footer{
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 3em;
     margin: 0 auto;
     text-align: center;
 }
